@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  column-gap: 4%;
+  grid-template-columns: 25% 40% 20%;
+  padding: 10px;
+}
+
+/* Align text in the first column to the left */
+.grid-item:nth-child(3n+1) {
+  text-align: right;
+}
+
+/* Align text in the second column to the center */
+.grid-item:nth-child(3n+2) {
+  text-align: left;
+}
+
+/* Align text in the third column to the right */
+.grid-item:nth-child(3n+3) {
+  text-align: right;
+}
